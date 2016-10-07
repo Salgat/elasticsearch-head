@@ -11,4 +11,5 @@ RUN npm install -g grunt-cli
 RUN npm install -p /opt/head/elasticsearch-head
 
 ADD run.sh /run.sh
+RUN chmod +x /run.sh
 CMD ["/run.sh"]
